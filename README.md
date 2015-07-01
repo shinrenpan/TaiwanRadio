@@ -47,6 +47,10 @@
 有相關建議或是 issue 請至 issue [回報][8].
 
 
+# License
+MIT License
+
+
 [1]: https://itun.es/i6LV9Gb "TaiwanRadio"
 [2]: http://hichannel.hinet.net/radio/index.do "hichannel 廣播"
 [3]: https://github.com/shinrenpan/TaiwanRadio/wiki/成效報表 "報表"
