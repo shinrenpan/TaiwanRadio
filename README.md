@@ -6,6 +6,22 @@
 
 <a href="https://itun.es/i6LV9Gb"><img src="https://devimages.apple.com.edgekey.net/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg"></a>
 
+**以下為 App 特色:**
+
+### 背景播放
+- 點選播放後, 可以將 App 退至背景或打開其他 App, 音樂不中斷.
+
+### 自動停止
+- 設定倒數後音樂自動停止, 不浪費電源.
+- 倒數設定請使用 iPhone 內建倒數 App. 打開時鐘 -> 計時器 -> 設定倒數 -> 當計時結束選擇停止播放.
+
+### 控制中心
+- 支援內建控制中心及耳機線控停止或播放音樂.
+
+### 簡潔的 UI
+- 使用內建 UI, 簡單上手聽音樂.
+- 列表左滑手勢可呈現加入收藏 / 取消收藏功能.
+
 
 # Why Open Source
 一開始是同事找不到簡單的廣播電台 App, 所以幫她寫了.  
