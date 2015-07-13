@@ -37,6 +37,10 @@
 - 請在 [AppDelegate.m][9] 設置自己的 Key 跟 Id, 並移除 Error.
 
 使用前請先閱讀上方工具教學.  
+
+
+# 後台建置
+本 Project 使用 [LeanCloud][6] 當作後台,  
 後台建置可以到 [wiki][7] 觀看教學.
 
 
