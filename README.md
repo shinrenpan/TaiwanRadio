@@ -34,13 +34,10 @@
 - 本 Project 使用 [xUnique][4] 減少 git 衝除.
 - 本 Project 使用 [CocoaPods][5] 管理第三方 Library.
 - 本 Project 使用 [LeanClode][6] 當做後台.
+- 請在 [AppDelegate.m][9] 設置自己的 Key 跟 Id, 並移除 Error.
 
 使用前請先閱讀上方工具教學.  
 後台建置可以到 [wiki][7] 觀看教學.
-
-# TODO
-- [ ] 錄音功能: 很多 User 想要錄音功能, 但是我沒空寫.  
-- [ ] 多語系: 沒空寫.
 
 
 # ISSUE
@@ -59,3 +56,4 @@ MIT License
 [6]: https://leancloud.cn "LeanClode"
 [7]: https://github.com/shinrenpan/TaiwanRadio/wiki/後台建置 "後台建置"
 [8]: https://github.com/shinrenpan/TaiwanRadio/issues "issues"
+[9]: https://github.com/shinrenpan/TaiwanRadio/blob/master/TaiwanRadio/AppDelegate.m#L29-31 "AppDelegate.m"
