@@ -21,6 +21,7 @@
 // THE SOFTWARE.
 
 #import "TRRadio.h"
+#import "TRUtility.h"
 #import "TRFavoriteController.h"
 
 #import <AVOSCloud/AVOSCloud.h>
@@ -159,7 +160,6 @@ typedef NS_ENUM(NSUInteger, TRFavoriteDataStatus) {
         aCell.imageView.tintColor       = [UIColor whiteColor];
         aCell.accessoryView             = nil;
         aCell.textLabel.text            = radio[@"name"];
-        aCell.detailTextLabel.text      = enable ? @"正常" : @"異常";
         aCell.detailTextLabel.textColor = enable ? [UIColor whiteColor] : [UIColor redColor];
         
         return aCell;
@@ -197,22 +197,6 @@ typedef NS_ENUM(NSUInteger, TRFavoriteDataStatus) {
     TRRadio *radio     = [TRRadio singleton];
     AVObject *selected = _dataSource[indexPath.row];
     NSString *radioId  = selected[@"radioId"];
-    BOOL enable        = [selected[@"enable"]boolValue];
-    
-    if(!enable)
-    {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"!!!"
-                                                           message:@"該電台異常中."
-                                                          delegate:nil
-                                                 cancelButtonTitle:@"確定"
-                                                 otherButtonTitles:nil];
-            
-            [alert show];
-        });
-        
-        return;
-    }
     
     // 點到目前正在播放的電台
     if([radioId isEqualToString:radio.radioId] && radio.isPlaying)
@@ -229,27 +213,23 @@ typedef NS_ENUM(NSUInteger, TRFavoriteDataStatus) {
 - (NSArray *)tableView:(UITableView *)tableView
   editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-    NSArray *temp               = [userDefault objectForKey:@"favorite"];
-    NSMutableArray *favorite    = [NSMutableArray arrayWithArray:temp];
-
+    NSMutableArray *favorite = [TRUtility favorites];
+    
+    // 基本上應該不會發生
     if(!favorite.count)
     {
-        // 基本上不會發生
         return nil;
     }
-    
+
     AVObject *radio   = _dataSource[indexPath.row];
     NSString *radioId = radio[@"radioId"];
-    
+
     UITableViewRowAction *action =
       [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault
                                          title:@"取消收藏"
                                        handler:
        ^(UITableViewRowAction *action, NSIndexPath *indexPath) {
-           [favorite removeObject:radioId];
-           [[NSUserDefaults standardUserDefaults]setObject:favorite forKey:@"favorite"];
-           [[NSUserDefaults standardUserDefaults]synchronize];
+           [TRUtility removeRadioIdFromFavorites:radioId];
            [tableView setEditing:NO animated:YES];
            [self __downloadData:nil];
        }];
