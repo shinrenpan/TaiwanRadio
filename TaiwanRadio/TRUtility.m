@@ -24,6 +24,8 @@
 
 @implementation TRUtility
 
+#pragma mark - Class methods
+#pragma mark 收藏一個電台
 + (void)addRadioIdToFavorites:(NSString *)radioId
 {
     NSMutableArray *favorite = [self favorites];
@@ -38,6 +40,7 @@
     [[NSUserDefaults standardUserDefaults]synchronize];
 }
 
+#pragma mark 移除一個電台
 + (void)removeRadioIdFromFavorites:(NSString *)radioId
 {
     NSMutableArray *favorite = [self favorites];
@@ -52,11 +55,13 @@
     [[NSUserDefaults standardUserDefaults]synchronize];
 }
 
+#pragma mark 返回電台是否已加入收藏
 + (BOOL)radioIdInFavorites:(NSString *)radioId
 {
     return [[self favorites]containsObject:radioId];
 }
 
+#pragma mark 返回收藏列表
 + (NSMutableArray *)favorites
 {
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
