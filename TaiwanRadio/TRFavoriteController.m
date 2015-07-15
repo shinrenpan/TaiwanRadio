@@ -76,9 +76,16 @@ typedef NS_ENUM(NSUInteger, TRFavoriteDataStatus) {
 {
     [super viewDidAppear:animated];
     
-    self.navigationController.tabBarItem.badgeValue = nil;
-
-    [self __downloadData:nil];
+    if(self.navigationController.tabBarItem.badgeValue || !_dataSource.count)
+    {
+        self.navigationController.tabBarItem.badgeValue = nil;
+        
+        [self __downloadData:nil];
+    }
+    else
+    {
+        [self __shouldReloadTableView:nil];
+    }
 }
 
 #pragma mark - Properties Setter
