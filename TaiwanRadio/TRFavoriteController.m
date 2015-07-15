@@ -41,7 +41,7 @@ typedef NS_ENUM(NSUInteger, TRFavoriteDataStatus) {
 @property (nonatomic, assign) TRFavoriteDataStatus dataStatus;
 
 // 電台資料
-@property (nonatomic, strong) NSArray *dataSource;
+@property (nonatomic, strong) NSMutableArray *dataSource;
 
 @end
 
@@ -77,7 +77,7 @@ typedef NS_ENUM(NSUInteger, TRFavoriteDataStatus) {
 {
     [super viewDidAppear:animated];
     
-    if(self.navigationController.tabBarItem.badgeValue || !_dataSource.count)
+    if(self.navigationController.tabBarItem.badgeValue || !_dataSource)
     {
         self.navigationController.tabBarItem.badgeValue = nil;
         
@@ -153,14 +153,12 @@ typedef NS_ENUM(NSUInteger, TRFavoriteDataStatus) {
 {
     AVObject *radio   = _dataSource[indexPath.row];
     NSString *radioId = radio[@"radioId"];
-    BOOL enable       = [radio[@"enable"]boolValue];
     
     UITableViewCell *cell = ^{
-        UITableViewCell *aCell          = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-        aCell.imageView.tintColor       = [UIColor whiteColor];
-        aCell.accessoryView             = nil;
-        aCell.textLabel.text            = radio[@"name"];
-        aCell.detailTextLabel.textColor = enable ? [UIColor whiteColor] : [UIColor redColor];
+        UITableViewCell *aCell    = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+        aCell.imageView.tintColor = [UIColor whiteColor];
+        aCell.textLabel.text      = radio[@"name"];
+        aCell.accessoryView       = [self __favoriteButtonWithHighlight:YES atRow:indexPath.row];
         
         return aCell;
     }();
@@ -184,13 +182,6 @@ typedef NS_ENUM(NSUInteger, TRFavoriteDataStatus) {
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView
-  commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
-  forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return UITableViewRowAction 需要實做這個 method
-}
-
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -208,33 +199,6 @@ typedef NS_ENUM(NSUInteger, TRFavoriteDataStatus) {
     
     [TRRadio singleton].radioTitle = selected[@"name"];
     [TRRadio singleton].radioId    = radioId;
-}
-
-- (NSArray *)tableView:(UITableView *)tableView
-  editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSMutableArray *favorite = [TRUtility favorites];
-    
-    // 基本上應該不會發生
-    if(!favorite.count)
-    {
-        return nil;
-    }
-
-    AVObject *radio   = _dataSource[indexPath.row];
-    NSString *radioId = radio[@"radioId"];
-
-    UITableViewRowAction *action =
-      [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault
-                                         title:@"取消收藏"
-                                       handler:
-       ^(UITableViewRowAction *action, NSIndexPath *indexPath) {
-           [TRUtility removeRadioIdFromFavorites:radioId];
-           [tableView setEditing:NO animated:YES];
-           [self __downloadData:nil];
-       }];
-    
-    return @[action];
 }
 
 #pragma mark - Private
@@ -297,7 +261,7 @@ typedef NS_ENUM(NSUInteger, TRFavoriteDataStatus) {
             }
             else if(objects.count)
             {
-                _dataSource     = objects;
+                _dataSource     = [NSMutableArray arrayWithArray:objects];
                 self.dataStatus = TRFavoriteDataStatusSucceed;
             }
             else
@@ -306,6 +270,40 @@ typedef NS_ENUM(NSUInteger, TRFavoriteDataStatus) {
             }
         });
     }];
+}
+
+#pragma mark 返回收藏按鈕
+- (UIButton *)__favoriteButtonWithHighlight:(BOOL)flag atRow:(NSUInteger)row
+{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.tag       = row;
+    button.frame     = CGRectMake(0, 0, 30, 30);
+    button.tintColor = flag ? [UIColor magentaColor] : [UIColor whiteColor];
+    
+    [button setImage:[UIImage imageNamed:@"icon-tab2"] forState:UIControlStateNormal];
+    
+    [button addTarget:self
+               action:@selector(__favoriteButtonClicked:)
+     forControlEvents:UIControlEventTouchUpInside];
+    
+    return button;
+}
+
+#pragma mark 收藏按鈕 action
+- (void)__favoriteButtonClicked:(UIButton *)button
+{
+    NSUInteger row             = button.tag;
+    AVObject *radio            = _dataSource[row];
+    NSString *radioId          = radio[@"radioId"];
+    
+    [TRUtility removeRadioIdFromFavorites:radioId];
+    [_dataSource removeObjectAtIndex:row];
+    [self.tableView reloadData];
+    
+    if(!_dataSource.count)
+    {
+        self.dataStatus = TRFavoriteDataStatusEmpty;
+    }
 }
 
 @end
