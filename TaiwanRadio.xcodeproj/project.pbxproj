@@ -19,6 +19,7 @@
 		841C415F6224CE840D3DDA16800D8895 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7B29108F69585D3F2B459972C963B8 /* AppDelegate.m */; };
 		886CB86770533B15ABEE2BBBD5637503 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BBE80F336E370D5FD6CA0A15D81E9EC /* libPods.a */; };
 		F04209FEE075051CA359002708993284 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DF1D35A04440EF667B5DDF5B76BB5C /* main.m */; };
+		FDB8779E4AEF746CD51166FB0FD0F6A7 /* TRUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F694A96AE63AD3F8831DE338D4546F /* TRUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		1E040CC23B8D7D091BA1265938F878FB /* TaiwanRadioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaiwanRadioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E9903E36CC4E7C68B3B270F31E384F3 /* TRUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUtility.h; sourceTree = "<group>"; };
 		2F8431EE90FB933B7FCC6779F974E448 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		3E9EF072B62AA7A48D4F195C6754C5AF /* TRListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRListViewController.h; sourceTree = "<group>"; };
 		406432DB76B55D11257EBAA7C53A7138 /* TRSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSettingController.h; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		DAD62E6316B6E433DABB4E9F7E5F8713 /* TRRadio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRadio.m; sourceTree = "<group>"; };
 		DE495B23E73E614AA3E8463D16FC8810 /* TRFavoriteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRFavoriteController.h; sourceTree = "<group>"; };
 		E0C0D9C34FAD2F311A1EDE2616C8D4F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3F694A96AE63AD3F8831DE338D4546F /* TRUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUtility.m; sourceTree = "<group>"; };
 		FB7B29108F69585D3F2B459972C963B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FDA6C43835F7F3BCCAEB2FF8419B95DF /* TRSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSettingController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +104,8 @@
 				DAD62E6316B6E433DABB4E9F7E5F8713 /* TRRadio.m */,
 				406432DB76B55D11257EBAA7C53A7138 /* TRSettingController.h */,
 				FDA6C43835F7F3BCCAEB2FF8419B95DF /* TRSettingController.m */,
+				1E9903E36CC4E7C68B3B270F31E384F3 /* TRUtility.h */,
+				E3F694A96AE63AD3F8831DE338D4546F /* TRUtility.m */,
 			);
 			path = TaiwanRadio;
 			sourceTree = "<group>";
@@ -304,6 +309,7 @@
 				82F4D9E7C312693930C34B18BA3FE9AB /* TRListViewController.m in Sources */,
 				73708F439CAF6AB71B367051C13EB043 /* TRRadio.m in Sources */,
 				76DD837B3ED13ECD7D49B0F0AC16B3E8 /* TRSettingController.m in Sources */,
+				FDB8779E4AEF746CD51166FB0FD0F6A7 /* TRUtility.m in Sources */,
 				F04209FEE075051CA359002708993284 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
