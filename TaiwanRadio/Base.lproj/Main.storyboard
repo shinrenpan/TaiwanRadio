@@ -40,7 +40,7 @@
                             <outlet property="delegate" destination="65f-cj-xKM" id="PQG-Fe-U9H"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="電台列表" id="CUg-qI-ibA"/>
+                    <navigationItem key="navigationItem" title="Radios" id="CUg-qI-ibA"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nYp-UF-UzQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,7 +56,7 @@
                         <color key="backgroundColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
-                            <tableViewSection headerTitle="暫停或播放電台" id="eBO-JI-4Qo">
+                            <tableViewSection headerTitle="Play / Pause" id="eBO-JI-4Qo">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="J9b-8T-jcg" detailTextLabel="nZh-dU-Jza" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="is2-gc-XIu">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -64,13 +64,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="未選擇電台" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="J9b-8T-jcg">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="No radio selected" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="J9b-8T-jcg">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nZh-dU-Jza">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="subTitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nZh-dU-Jza">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.50196081399917603" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
@@ -81,7 +81,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="贊助" footerTitle="台灣廣播電台為免費 App, 你可以透過看廣告以及點擊廣告贊助我." id="Tx2-cW-zJe">
+                            <tableViewSection headerTitle="Donate" footerTitle="This App is free. You can click the advertisement for supporting me further." id="Tx2-cW-zJe">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="lcf-Wh-lEb" rowHeight="60" style="IBUITableViewCellStyleDefault" id="EXM-ys-G8E">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -89,7 +89,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="廣告" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lcf-Wh-lEb">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Advertisement" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lcf-Wh-lEb">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
@@ -106,17 +106,17 @@
                             <outlet property="delegate" destination="bSd-0r-0Ru" id="3Il-dJ-1Wy"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="設定" id="nIB-cB-36D"/>
+                    <navigationItem key="navigationItem" title="Settings" id="nIB-cB-36D"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Pj-hK-Gvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="540" y="1941"/>
         </scene>
-        <!--設定-->
+        <!--Settings-->
         <scene sceneID="AY7-cV-VkL">
             <objects>
                 <navigationController id="5H4-iD-WrU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="設定" image="icon-tab3" id="ojA-8g-jO8"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="icon-tab3" id="ojA-8g-jO8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="4hH-pI-37C">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -150,11 +150,11 @@
             </objects>
             <point key="canvasLocation" x="-987" y="1194"/>
         </scene>
-        <!--電台列表-->
+        <!--Radios-->
         <scene sceneID="bQL-PF-Yqe">
             <objects>
                 <navigationController id="DNW-pN-vzQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="電台列表" image="icon-tab1" id="Fui-2B-KMC"/>
+                    <tabBarItem key="tabBarItem" title="Radios" image="icon-tab1" id="Fui-2B-KMC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="WyV-qE-KfC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -170,11 +170,11 @@
             </objects>
             <point key="canvasLocation" x="-204" y="473"/>
         </scene>
-        <!--收藏列表-->
+        <!--Favorites-->
         <scene sceneID="RAo-6S-Eo1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dR8-3t-7p9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="收藏列表" image="icon-tab2" id="WQD-op-zf1"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="icon-tab2" id="WQD-op-zf1"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="XHI-cd-05e">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -225,7 +225,7 @@
                             <outlet property="delegate" destination="sNo-Gk-ncU" id="umy-tI-a5P"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="收藏列表" id="yPA-1S-a2A"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="yPA-1S-a2A"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6xG-zg-Ru3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

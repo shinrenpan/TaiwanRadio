@@ -1,0 +1,41 @@
+/* Class = "UINavigationItem"; title = "Radios"; ObjectID = "CUg-qI-ibA"; */
+"CUg-qI-ibA.title" = "电台列表";
+
+/* Class = "UITabBarItem"; title = "Radios"; ObjectID = "Fui-2B-KMC"; */
+"Fui-2B-KMC.title" = "电台列表";
+
+/* Class = "UILabel"; text = "No radio selected"; ObjectID = "J9b-8T-jcg"; */
+"J9b-8T-jcg.text" = "未选择电台";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "T4w-dP-SJ3"; */
+"T4w-dP-SJ3.text" = "Title";
+
+/* Class = "UITableViewSection"; footerTitle = "This App is free. You can click the advertisement for supporting me further."; ObjectID = "Tx2-cW-zJe"; */
+"Tx2-cW-zJe.footerTitle" = "此 App 为免费软体. 你可以点击广告贊助我.";
+
+/* Class = "UITableViewSection"; headerTitle = "Donate"; ObjectID = "Tx2-cW-zJe"; */
+"Tx2-cW-zJe.headerTitle" = "贊助";
+
+/* Class = "UITabBarItem"; title = "Favorites"; ObjectID = "WQD-op-zf1"; */
+"WQD-op-zf1.title" = "收藏";
+
+/* Class = "UITableViewSection"; headerTitle = "Play / Pause"; ObjectID = "eBO-JI-4Qo"; */
+"eBO-JI-4Qo.headerTitle" = "播放 / 暂停";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "fXD-Zf-Efp"; */
+"fXD-Zf-Efp.text" = "Title";
+
+/* Class = "UILabel"; text = "Advertisement"; ObjectID = "lcf-Wh-lEb"; */
+"lcf-Wh-lEb.text" = "广告";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "nIB-cB-36D"; */
+"nIB-cB-36D.title" = "设定";
+
+/* Class = "UILabel"; text = "subTitle"; ObjectID = "nZh-dU-Jza"; */
+"nZh-dU-Jza.text" = "subTitle";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "ojA-8g-jO8"; */
+"ojA-8g-jO8.title" = "设定";
+
+/* Class = "UINavigationItem"; title = "Favorites"; ObjectID = "yPA-1S-a2A"; */
+"yPA-1S-a2A.title" = "收藏";

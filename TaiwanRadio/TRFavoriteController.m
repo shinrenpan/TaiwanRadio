@@ -92,8 +92,10 @@ typedef NS_ENUM(NSUInteger, TRFavoriteDataStatus) {
 #pragma mark - Properties Setter
 - (void)setDataStatus:(TRFavoriteDataStatus)dataStatus
 {
+    NSString *title = NSLocalizedString(@"Reload", nil);
+    
     UIBarButtonItem *rightItem =
-      [[UIBarButtonItem alloc]initWithTitle:@"Reload"
+      [[UIBarButtonItem alloc]initWithTitle:title
                                       style:UIBarButtonItemStyleDone
                                      target:self
                                      action:@selector(__downloadData:)];
@@ -120,7 +122,7 @@ typedef NS_ENUM(NSUInteger, TRFavoriteDataStatus) {
             return view;
         }();
         
-        statusLabel.text = @"(ↁ_ↁ)\n\n載入中";
+        statusLabel.text = NSLocalizedString(@"Data-Loading", nil);
     }
     else if(dataStatus == TRFavoriteDataStatusSucceed)
     {
@@ -129,11 +131,11 @@ typedef NS_ENUM(NSUInteger, TRFavoriteDataStatus) {
     }
     else if(dataStatus == TRFavoriteDataStatusEmpty)
     {
-        statusLabel.text = @"(ఠ_ఠ)\n\n沒有收藏資料";
+        statusLabel.text = NSLocalizedString(@"Data-Empty", nil);
     }
     else if(dataStatus == TRFavoriteDataStatusError)
     {
-        statusLabel.text = @"(ಥ_ಥ) \n\n錯誤!請檢查網路連線";
+        statusLabel.text = NSLocalizedString(@"Data-Error", nil);
     }
     
     self.navigationItem.rightBarButtonItem = rightItem;

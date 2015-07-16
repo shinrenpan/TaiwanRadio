@@ -1,0 +1,27 @@
+// Reload title
+"Reload" = "Reload";
+
+// Data status loading
+"Data-Loading" = "(ↁ_ↁ)\n\nLoading";
+
+// Data status error
+"Data-Error" = "(ಥ_ಥ) \n\nError!Please check the network connection";
+
+// Data status empty
+"Data-Empty" = "(ఠ_ఠ)\n\nNo data found";
+
+// Radio playing
+"Radio-Playing" = "Playing...";
+
+// Radio paused
+"Radio-Paused" = "Paused";
+
+// Radio buffering
+"Radio-Buffering" = "Buffering...";
+
+// Radio error
+"Radio-Error" = "Error";
+
+// No radio selected
+"Radio-Unselected" = "No radio selected";
+

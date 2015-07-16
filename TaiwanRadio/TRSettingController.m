@@ -90,23 +90,23 @@ typedef NS_ENUM(NSUInteger, TableSectionType) {
         switch ([TRRadio singleton].radioStatus)
         {
             case TRRaidoStatusPlaying:
-                title = @"播放中...";
+                title = NSLocalizedString(@"Radio-Playing", nil);
                 break;
         
             case TRRaidoStatusError:
-                title = @"播放失敗";
+                title = NSLocalizedString(@"Radio-Error", nil);
                 break;
                 
             case TRRaidoStatusBuffer:
-                title = @"緩衝中...";
+                title = NSLocalizedString(@"Radio-Buffering", nil);
                 break;
                 
             case TRRaidoStatusPaused:
-                title = @"暫停中";
+                title = NSLocalizedString(@"Radio-Paused", nil);
                 break;
                 
             default:
-                title = @"未選擇電台";
+                title = NSLocalizedString(@"Radio-Unselected", nil);
                 break;
         }
         
