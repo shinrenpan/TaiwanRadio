@@ -27,8 +27,8 @@
 #import <AVOSCloud/AVOSCloud.h>
 
 #error Replace your LeanCloud AppId and ClientKey
-static NSString *appId     = @"LeanCloud AppId";
-static NSString *clientKey = @"LeanCloud ClientKey";
+static NSString * const LeanCloudId  = @"LeanCloud AppId";
+static NSString * const LeanCliudKey = @"LeanCloud ClientKey";
 
 
 @implementation AppDelegate
@@ -40,7 +40,7 @@ static NSString *clientKey = @"LeanCloud ClientKey";
     [UIViewController prepareInterstitialAds];
     [self __setupRemoteControl];
     [self __setupUIAppearance];
-    [AVOSCloud setApplicationId:appId clientKey:clientKey];
+    [AVOSCloud setApplicationId:LeanCloudId clientKey:LeanCliudKey];
     
     return YES;
 }
