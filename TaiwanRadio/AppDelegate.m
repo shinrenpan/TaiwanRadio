@@ -28,7 +28,7 @@
 
 #error Replace your LeanCloud AppId and ClientKey
 static NSString * const LeanCloudId  = @"LeanCloud AppId";
-static NSString * const LeanCliudKey = @"LeanCloud ClientKey";
+static NSString * const LeanCloudKey = @"LeanCloud ClientKey";
 
 
 @implementation AppDelegate
