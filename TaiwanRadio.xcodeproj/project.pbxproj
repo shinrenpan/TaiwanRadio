@@ -61,6 +61,9 @@
 		BE251221A2D1012A0072494E3BABAEC0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C1C15F17D322C6E7AF91ED8482D3BB7B /* TaiwanRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaiwanRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B2B3FFE8297B05FCE96666978EA11C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D87EEF361B5F79E400FF93B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		D87EEF371B5F7A0200FF93B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D87EEF381B5F7A0C00FF93B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DAD62E6316B6E433DABB4E9F7E5F8713 /* TRRadio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRadio.m; sourceTree = "<group>"; };
 		DE495B23E73E614AA3E8463D16FC8810 /* TRFavoriteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRFavoriteController.h; sourceTree = "<group>"; };
 		E0C0D9C34FAD2F311A1EDE2616C8D4F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -355,6 +358,7 @@
 				E0C0D9C34FAD2F311A1EDE2616C8D4F9 /* Base */,
 				2F5ACC2AFEE3AEFBDBFE86D0726E99FD /* zh-Hans */,
 				679FEBD608CD0C7018D0DC24CAA5FBE1 /* zh-Hant */,
+				D87EEF361B5F79E400FF93B6 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -365,6 +369,7 @@
 				49863F9E79351BECAA010476D7B244DB /* Base */,
 				BE251221A2D1012A0072494E3BABAEC0 /* zh-Hans */,
 				8DF103A8662BEE5C11F0046E520C5095 /* zh-Hant */,
+				D87EEF381B5F7A0C00FF93B6 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -375,6 +380,7 @@
 				1A6FA940B929A86D79BF1DEEB5F9A9DB /* Base */,
 				E7FBE9DF70DB8B9D2BEA4B7926B16694 /* zh-Hans */,
 				097D9ACF71C9F25BBCFF8CC6219B7201 /* zh-Hant */,
+				D87EEF371B5F7A0200FF93B6 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

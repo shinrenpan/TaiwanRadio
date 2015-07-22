@@ -1,0 +1,42 @@
+
+/* Class = "UINavigationItem"; title = "Radios"; ObjectID = "CUg-qI-ibA"; */
+"CUg-qI-ibA.title" = "Radios";
+
+/* Class = "UITabBarItem"; title = "Radios"; ObjectID = "Fui-2B-KMC"; */
+"Fui-2B-KMC.title" = "Radios";
+
+/* Class = "UILabel"; text = "No radio selected"; ObjectID = "J9b-8T-jcg"; */
+"J9b-8T-jcg.text" = "No radio selected";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "T4w-dP-SJ3"; */
+"T4w-dP-SJ3.text" = "Title";
+
+/* Class = "UITableViewSection"; footerTitle = "This App is free. You can click the advertisement for supporting me further."; ObjectID = "Tx2-cW-zJe"; */
+"Tx2-cW-zJe.footerTitle" = "This App is free. You can click the advertisement for supporting me further.";
+
+/* Class = "UITableViewSection"; headerTitle = "Donate"; ObjectID = "Tx2-cW-zJe"; */
+"Tx2-cW-zJe.headerTitle" = "Donate";
+
+/* Class = "UITabBarItem"; title = "Favorites"; ObjectID = "WQD-op-zf1"; */
+"WQD-op-zf1.title" = "Favorites";
+
+/* Class = "UITableViewSection"; headerTitle = "Play / Pause"; ObjectID = "eBO-JI-4Qo"; */
+"eBO-JI-4Qo.headerTitle" = "Play / Pause";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "fXD-Zf-Efp"; */
+"fXD-Zf-Efp.text" = "Title";
+
+/* Class = "UILabel"; text = "Advertisement"; ObjectID = "lcf-Wh-lEb"; */
+"lcf-Wh-lEb.text" = "Advertisement";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "nIB-cB-36D"; */
+"nIB-cB-36D.title" = "Settings";
+
+/* Class = "UILabel"; text = "subTitle"; ObjectID = "nZh-dU-Jza"; */
+"nZh-dU-Jza.text" = "subTitle";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "ojA-8g-jO8"; */
+"ojA-8g-jO8.title" = "Settings";
+
+/* Class = "UINavigationItem"; title = "Favorites"; ObjectID = "yPA-1S-a2A"; */
+"yPA-1S-a2A.title" = "Favorites";
