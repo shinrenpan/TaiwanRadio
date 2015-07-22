@@ -28,7 +28,7 @@
 
 #error Replace your LeanCloud AppId and ClientKey
 static NSString * const LeanCloudId  = @"LeanCloud AppId";
-static NSString * const LeanCloudKey = @"LeanCloud ClientKey";
+static NSString * const LeanCloudKey = @"LeanCloud AppKey";
 
 
 @implementation AppDelegate
@@ -40,7 +40,7 @@ static NSString * const LeanCloudKey = @"LeanCloud ClientKey";
     [UIViewController prepareInterstitialAds];
     [self __setupRemoteControl];
     [self __setupUIAppearance];
-    [AVOSCloud setApplicationId:LeanCloudId clientKey:LeanCliudKey];
+    [AVOSCloud setApplicationId:LeanCloudId clientKey:LeanCloudKey];
     
     return YES;
 }
