@@ -23,15 +23,8 @@
 - 列表左滑手勢可呈現加入收藏 / 取消收藏功能.
 
 
-# Why Open Source
-一開始是同事找不到簡單的廣播電台 App, 所以幫她寫了.  
-上架之後, 成效其實並不是很好, 加上要上班就懶得維護了, 所以開源.
-
-你可以到 [wiki][3] 看此 App 的成效報表.
-
-
 # 注意事項
-- 本 Project 使用 [xUnique][4] 減少 git 衝除.
+- 本 Project 使用 [xUnique][4] 管理 Xcode project file.
 - 本 Project 使用 [CocoaPods][5] 管理第三方 Library.
 - 本 Project 使用 [LeanClode][6] 當做後台.
 - 請在 [AppDelegate.m][9] 設置自己的 Key 跟 Id, 並移除 Error.
@@ -42,10 +35,6 @@
 # 後台建置
 本 Project 使用 [LeanCloud][6] 當作後台,  
 後台建置可以到 [wiki][7] 觀看教學.
-
-
-# ISSUE
-有相關建議或是 issue 請至 issue [回報][8].
 
 
 # License
