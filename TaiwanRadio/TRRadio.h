@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
-#import <MediaPlayer/MediaPlayer.h>
 #import <AVFoundation/AVFoundation.h>
 
 // 電台狀態改變 Notification
