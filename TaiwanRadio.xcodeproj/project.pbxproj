@@ -18,9 +18,9 @@
 		76DD837B3ED13ECD7D49B0F0AC16B3E8 /* TRSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA6C43835F7F3BCCAEB2FF8419B95DF /* TRSettingController.m */; };
 		82F4D9E7C312693930C34B18BA3FE9AB /* TRListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5C6BB360A0848A8DEF16EB988F240D /* TRListViewController.m */; };
 		841C415F6224CE840D3DDA16800D8895 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7B29108F69585D3F2B459972C963B8 /* AppDelegate.m */; };
+		886CB86770533B15ABEE2BBBD5637503 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BBE80F336E370D5FD6CA0A15D81E9EC /* libPods.a */; };
 		F04209FEE075051CA359002708993284 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DF1D35A04440EF667B5DDF5B76BB5C /* main.m */; };
 		FDB8779E4AEF746CD51166FB0FD0F6A7 /* TRUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F694A96AE63AD3F8831DE338D4546F /* TRUtility.m */; };
-		FDEE80DC8301359108EE64F2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E290CBF68A63B5F364F12F55 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,20 +39,20 @@
 		67E82818EEB0DC734A3EA69CA4777A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		685AB9B80EFD02F3434A7F835232DEA3 /* Launch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Launch.xib; sourceTree = "<group>"; };
 		7112834FF3BDCE743B6F390BCE7AD6FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		81E2C0E9D8CC6CA66FB9ECBA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7BBE80F336E370D5FD6CA0A15D81E9EC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		83ECFCCA06C2A758F4722D4E839D10D6 /* TRRadio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRadio.h; sourceTree = "<group>"; };
 		8D18E090C7042E8F1EA24BC35ADC058E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		8DF103A8662BEE5C11F0046E520C5095 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		92DF1D35A04440EF667B5DDF5B76BB5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AEC581DDE82418DB7AE1E78A4373322E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AF5C6BB360A0848A8DEF16EB988F240D /* TRListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRListViewController.m; sourceTree = "<group>"; };
-		BA45B1F9D5344561376AB54E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B19CF90DCDA8C147149241E08A59661D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BE251221A2D1012A0072494E3BABAEC0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C1C15F17D322C6E7AF91ED8482D3BB7B /* TaiwanRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaiwanRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B2B3FFE8297B05FCE96666978EA11C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAD62E6316B6E433DABB4E9F7E5F8713 /* TRRadio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRadio.m; sourceTree = "<group>"; };
 		DE495B23E73E614AA3E8463D16FC8810 /* TRFavoriteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRFavoriteController.h; sourceTree = "<group>"; };
 		E0C0D9C34FAD2F311A1EDE2616C8D4F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E290CBF68A63B5F364F12F55 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3F694A96AE63AD3F8831DE338D4546F /* TRUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUtility.m; sourceTree = "<group>"; };
 		E7FBE9DF70DB8B9D2BEA4B7926B16694 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		FB7B29108F69585D3F2B459972C963B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D6BF2DC04E2DE6772FA29F4D61D506A /* iAd.framework in Frameworks */,
-				FDEE80DC8301359108EE64F2 /* libPods.a in Frameworks */,
+				886CB86770533B15ABEE2BBBD5637503 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +93,15 @@
 			path = TaiwanRadio;
 			sourceTree = "<group>";
 		};
+		2F41482ED21AE8982D68932D45B7EF60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEC581DDE82418DB7AE1E78A4373322E /* Pods.debug.xcconfig */,
+				B19CF90DCDA8C147149241E08A59661D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4ADD0EC0C1E028294CCEB734C411E06E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,20 +114,11 @@
 			path = TaiwanRadio;
 			sourceTree = "<group>";
 		};
-		8D877C83E820DB2F10C7C0D1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BA45B1F9D5344561376AB54E /* Pods.debug.xcconfig */,
-				81E2C0E9D8CC6CA66FB9ECBA /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		905B024F828C779814CA085108201AB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				2F8431EE90FB933B7FCC6779F974E448 /* iAd.framework */,
-				E290CBF68A63B5F364F12F55 /* libPods.a */,
+				7BBE80F336E370D5FD6CA0A15D81E9EC /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,11 +135,11 @@
 			isa = PBXGroup;
 			children = (
 				905B024F828C779814CA085108201AB6 /* Frameworks */,
+				2F41482ED21AE8982D68932D45B7EF60 /* Pods */,
 				A8FE5061BDCFE06DEF03DCEB3772E099 /* Products */,
 				4ADD0EC0C1E028294CCEB734C411E06E /* Supporting Files */,
 				1F99DE88639F919E1BCAC61461BF253B /* TaiwanRadio */,
 				5CCA15E73FE1FC035F17D9C7F1A346B8 /* Images.xcassets */,
-				8D877C83E820DB2F10C7C0D1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,11 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 174C7FD4CBBE8644251CD6222E493F7D /* Build configuration list for PBXNativeTarget "TaiwanRadio" */;
 			buildPhases = (
-				7B3F721449307790CBFFDC46 /* Check Pods Manifest.lock */,
+				40745516009BB139BEDBBC7479BBE96C /* Check Pods Manifest.lock */,
 				98A0215CA33B4C6E1958792B610D2AD7 /* Sources */,
 				D772BE621318D64CB9F50A3AF80DDE36 /* Frameworks */,
 				393ABDAD654A2D7B55758314F9F8675B /* Resources */,
-				9B9ECF46FE79A108C8641B3F /* Copy Pods Resources */,
+				999CBEE9A007FFF530C849B94D46D6EC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,7 +215,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7B3F721449307790CBFFDC46 /* Check Pods Manifest.lock */ = {
+		40745516009BB139BEDBBC7479BBE96C /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -230,7 +230,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		9B9ECF46FE79A108C8641B3F /* Copy Pods Resources */ = {
+		999CBEE9A007FFF530C849B94D46D6EC /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -340,7 +340,7 @@
 		};
 		40428B3EEF999D5EDCE7386A44B12472 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA45B1F9D5344561376AB54E /* Pods.debug.xcconfig */;
+			baseConfigurationReference = AEC581DDE82418DB7AE1E78A4373322E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -401,7 +401,7 @@
 		};
 		B304C22224B29CFF364556C1F1F9FC2B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81E2C0E9D8CC6CA66FB9ECBA /* Pods.release.xcconfig */;
+			baseConfigurationReference = B19CF90DCDA8C147149241E08A59661D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
