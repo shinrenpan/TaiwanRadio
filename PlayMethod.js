@@ -25,9 +25,16 @@ var defaultSession =
 var dataTask =
     defaultSession.dataTaskWithRequest_completionHandler(request, block('NSData*,NSURLResponse*,NSError*', function(data,response, error)
     {
+    	if(data.length() == 0)
+    	{
+    		radio.setRadioStatus(4);
+
+    		return;
+    	}
+
 		var JSON = require('NSJSONSerialization').JSONObjectWithData_options_error(data, 0, null);
 		var playRadio = JSON.valueForKey('playRadio');
-                    
+
 		if(!JSON.isKindOfClass(require('NSDictionary').class()))
 		{      
 			radio.setRadioStatus(4);
@@ -35,7 +42,7 @@ var dataTask =
 			return;
 		}
 
-		if(!playRadio)
+		if(playRadio.length() == 0)
 		{
 			radio.setRadioStatus(4);
 
