@@ -330,7 +330,7 @@ NSString * const TRRaidoStatusChangedNotification = @"radio_status_changed";
 {
     NSURLComponents *component = ^{
         NSString *URL        = @"http://hichannel.hinet.net";
-        NSString *path       = @"/radio/play.do";
+        NSString *path       = @"/radio/schannel.do";
         NSString *query      = [NSString stringWithFormat:@"id=%@", _radioId];
         NSURLComponents *com = [NSURLComponents componentsWithString:URL];
         com.path             = path;
@@ -344,6 +344,9 @@ NSString * const TRRaidoStatusChangedNotification = @"radio_status_changed";
     
     // hichannel API 需要設 Referer
     [request setValue:component.URL.absoluteString forHTTPHeaderField:@"Referer"];
+    
+    // 新 API 需要 XuiteAuth
+    [request setValue:@"xUite9602@hIchaNnel" forHTTPHeaderField:@"XuiteAuth"];
     
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:[NSOperationQueue mainQueue]
