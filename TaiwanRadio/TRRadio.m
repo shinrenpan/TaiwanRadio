@@ -8,8 +8,10 @@
 
 #import "TRRadio.h"
 
+#import <JSPatch/JPEngine.h>
 #import <AVOSCloud/AVOSCloud.h>
 #import <CoreTelephony/CTCall.h>
+#import <MediaPlayer/MediaPlayer.h>
 #import <CoreTelephony/CTCallCenter.h>
 
 // 電台狀態改變 Notification
@@ -26,9 +28,6 @@ NSString * const TRRaidoStatusChangedNotification = @"radio_status_changed";
 
 // 電台狀態
 @property (nonatomic, assign) TRRaidoStatus radioStatus;
-
-// 是否使用 CloudCode
-@property (nonatomic, readonly) BOOL useCloudCode;
 
 @end
 
@@ -99,11 +98,6 @@ NSString * const TRRaidoStatusChangedNotification = @"radio_status_changed";
 }
 
 #pragma mark - Properties Getter
-- (BOOL)useCloudCode
-{
-    return [[AVAnalytics getConfigParams:@"cloudCode"]boolValue];
-}
-
 - (BOOL)isPlaying
 {
     return self.rate > 0.0;
@@ -192,14 +186,7 @@ NSString * const TRRaidoStatusChangedNotification = @"radio_status_changed";
     
     self.radioStatus = TRRaidoStatusBuffer;
     
-    if(self.useCloudCode)
-    {
-        [self __playRadioWithCloudCode];
-    }
-    else
-    {
-        [self __playRadioWithHichannelAPI];
-    }
+    [self __playRadioWithHichannelAPI];
 }
 
 #pragma mark - Public
@@ -233,8 +220,6 @@ NSString * const TRRaidoStatusChangedNotification = @"radio_status_changed";
            forKeyPath:@"currentItem.status"
               options:NSKeyValueObservingOptionNew
               context:nil];
-    
-
 }
 
 #pragma mark 設置來電 Handel
@@ -277,107 +262,20 @@ NSString * const TRRaidoStatusChangedNotification = @"radio_status_changed";
     }
 }
 
-#pragma mark 使用 CloudCode 播放
-- (void)__playRadioWithCloudCode
-{
-    // 使用 cloudCode 會比較慢一點
-    NSURLComponents *component = ^{
-        NSString *URL        = @"http://hichannel.hinet.net";
-        NSString *path       = @"/radio/index.do";
-        NSString *query      = [NSString stringWithFormat:@"id=%@", _radioId];
-        NSURLComponents *com = [NSURLComponents componentsWithString:URL];
-        com.path             = path;
-        com.query            = query;
-        
-        return com;
-    }();
-    
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:component.URL];
-    request.timeoutInterval      = 30.0;
-    
-    [NSURLConnection sendAsynchronousRequest:request
-                                       queue:[NSOperationQueue mainQueue]
-                           completionHandler:
-     ^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-         if(connectionError || !data.length)
-         {
-            self.radioStatus = TRRaidoStatusError;
-         }
-         else
-         {
-            NSDictionary *params = @{@"url" : component.URL.absoluteString,
-                                     @"data" : data};
-    
-            [AVCloud callFunctionInBackground:@"radioURL"
-                               withParameters:params
-                                        block:
-             ^(id object, NSError *error) {
-                 if(error)
-                 {
-                    self.radioStatus = TRRaidoStatusError;
-                 }
-                 else
-                 {
-                     [self __replacePlayItemWithURL:object];
-                 }
-             }];
-         }
-     }];
-}
-
 #pragma mark 使用 hichannel api 播放
 - (void)__playRadioWithHichannelAPI
 {
-    NSURLComponents *component = ^{
-        NSString *URL        = @"http://hichannel.hinet.net";
-        NSString *path       = @"/radio/schannel.do";
-        NSString *query      = [NSString stringWithFormat:@"id=%@", _radioId];
-        NSURLComponents *com = [NSURLComponents componentsWithString:URL];
-        com.path             = path;
-        com.query            = query;
+    NSString *playMethod = [AVAnalytics getConfigParams:@"playMethod"];
+                             
+    if(!playMethod.length)
+    {
+        self.radioStatus = TRRaidoStatusError;
         
-        return com;
-    }();
-
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:component.URL];
-    request.timeoutInterval      = 30.0;
+        return;
+    }
     
-    // hichannel API 需要設 Referer
-    [request setValue:component.URL.absoluteString forHTTPHeaderField:@"Referer"];
-    
-    // 新 API 需要 XuiteAuth
-    [request setValue:@"xUite9602@hIchaNnel" forHTTPHeaderField:@"XuiteAuth"];
-    
-    [NSURLConnection sendAsynchronousRequest:request
-                                       queue:[NSOperationQueue mainQueue]
-                           completionHandler:
-     ^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-         if(connectionError)
-         {
-             self.radioStatus = TRRaidoStatusError;
-         }
-         else
-         {
-             id JSON = [NSJSONSerialization JSONObjectWithData:data
-                                                       options:NSJSONReadingAllowFragments
-                                                         error:&connectionError];
-            
-             if(![JSON isKindOfClass:[NSDictionary class]])
-             {
-                 self.radioStatus = TRRaidoStatusError;
-                 
-                 return ;
-             }
-             if(!JSON[@"playRadio"])
-             {
-                 self.radioStatus = TRRaidoStatusError;
-                 
-                 return;
-             }
-            
-             [self __replacePlayItemWithURL:JSON[@"playRadio"]];
-         }
-     }];
+    [JPEngine startEngine];
+    [JPEngine evaluateScript:playMethod];
 }
 
 #pragma mark 替換電台
