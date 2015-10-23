@@ -278,15 +278,4 @@ NSString * const TRRaidoStatusChangedNotification = @"radio_status_changed";
     [JPEngine evaluateScript:playMethod];
 }
 
-#pragma mark 替換電台
-- (void)__replacePlayItemWithURL:(NSString *)radioURL
-{
-    NSURL *URL         = [NSURL URLWithString:radioURL];
-    AVPlayerItem *item = [AVPlayerItem playerItemWithURL:URL];
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self replaceCurrentItemWithPlayerItem:item];
-    });
-}
-
 @end
