@@ -13,31 +13,19 @@
 		68EEAD9F521F9E7E13D000277E00C6EC /* TRFavoriteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE086F1ABDBE0976EF2F41F4F788E7 /* TRFavoriteController.m */; };
 		696C388C6D7C82A36FE0E1A2856C71FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DFFBC4EADF7C95C520D3AC3B58FBB12 /* Localizable.strings */; };
 		6FEFAE4C72EAC4AEF56D2C84FBE6E780 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDF6B4120E8EFBB2B0B677F2A991CEF /* Main.storyboard */; };
-		70D5131C89C3B9DC6A69EA30795AA58F /* TaiwanRadioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B030521447A7477E6E8D1B32600353C /* TaiwanRadioTests.m */; };
 		73708F439CAF6AB71B367051C13EB043 /* TRRadio.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD62E6316B6E433DABB4E9F7E5F8713 /* TRRadio.m */; };
 		74A83C71BD8351FD61CC01391881645C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C54F0ADAFB53D66222C232B8942EE085 /* InfoPlist.strings */; };
 		76DD837B3ED13ECD7D49B0F0AC16B3E8 /* TRSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA6C43835F7F3BCCAEB2FF8419B95DF /* TRSettingController.m */; };
 		82F4D9E7C312693930C34B18BA3FE9AB /* TRListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5C6BB360A0848A8DEF16EB988F240D /* TRListViewController.m */; };
 		841C415F6224CE840D3DDA16800D8895 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7B29108F69585D3F2B459972C963B8 /* AppDelegate.m */; };
-		886CB86770533B15ABEE2BBBD5637503 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BBE80F336E370D5FD6CA0A15D81E9EC /* libPods.a */; };
 		F04209FEE075051CA359002708993284 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DF1D35A04440EF667B5DDF5B76BB5C /* main.m */; };
 		FDB8779E4AEF746CD51166FB0FD0F6A7 /* TRUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F694A96AE63AD3F8831DE338D4546F /* TRUtility.m */; };
+		FDEE80DC8301359108EE64F2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E290CBF68A63B5F364F12F55 /* libPods.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B4949F26C23C6DA7B6BF4BE712910DAC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A05B1179D8930AFC644106BBE58BA582 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 55876EEADAA8D3FC3DD632DE4782088B;
-			remoteInfo = TaiwanRadio;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		097D9ACF71C9F25BBCFF8CC6219B7201 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		1A6FA940B929A86D79BF1DEEB5F9A9DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1E040CC23B8D7D091BA1265938F878FB /* TaiwanRadioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaiwanRadioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7546071A1777CC1B10F508057B29D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E9903E36CC4E7C68B3B270F31E384F3 /* TRUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUtility.h; sourceTree = "<group>"; };
 		2F5ACC2AFEE3AEFBDBFE86D0726E99FD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -50,23 +38,21 @@
 		679FEBD608CD0C7018D0DC24CAA5FBE1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		67E82818EEB0DC734A3EA69CA4777A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		685AB9B80EFD02F3434A7F835232DEA3 /* Launch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Launch.xib; sourceTree = "<group>"; };
-		6B030521447A7477E6E8D1B32600353C /* TaiwanRadioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaiwanRadioTests.m; sourceTree = "<group>"; };
 		7112834FF3BDCE743B6F390BCE7AD6FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		7BBE80F336E370D5FD6CA0A15D81E9EC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		81E2C0E9D8CC6CA66FB9ECBA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		83ECFCCA06C2A758F4722D4E839D10D6 /* TRRadio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRadio.h; sourceTree = "<group>"; };
 		8D18E090C7042E8F1EA24BC35ADC058E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		8DF103A8662BEE5C11F0046E520C5095 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		92DF1D35A04440EF667B5DDF5B76BB5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		979B248DB3B739776AEF98BEF5B2B7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEC581DDE82418DB7AE1E78A4373322E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AF5C6BB360A0848A8DEF16EB988F240D /* TRListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRListViewController.m; sourceTree = "<group>"; };
-		B19CF90DCDA8C147149241E08A59661D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BA45B1F9D5344561376AB54E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BE251221A2D1012A0072494E3BABAEC0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C1C15F17D322C6E7AF91ED8482D3BB7B /* TaiwanRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaiwanRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B2B3FFE8297B05FCE96666978EA11C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAD62E6316B6E433DABB4E9F7E5F8713 /* TRRadio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRadio.m; sourceTree = "<group>"; };
 		DE495B23E73E614AA3E8463D16FC8810 /* TRFavoriteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRFavoriteController.h; sourceTree = "<group>"; };
 		E0C0D9C34FAD2F311A1EDE2616C8D4F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E290CBF68A63B5F364F12F55 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3F694A96AE63AD3F8831DE338D4546F /* TRUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUtility.m; sourceTree = "<group>"; };
 		E7FBE9DF70DB8B9D2BEA4B7926B16694 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		FB7B29108F69585D3F2B459972C963B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,34 +60,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3DBB26BE6FE6BA4452E0DB43C6A8578D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D772BE621318D64CB9F50A3AF80DDE36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1D6BF2DC04E2DE6772FA29F4D61D506A /* iAd.framework in Frameworks */,
-				886CB86770533B15ABEE2BBBD5637503 /* libPods.a in Frameworks */,
+				FDEE80DC8301359108EE64F2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1657DBFAC6FD4E3C89E41F486EACD74C /* TaiwanRadioTests */ = {
-			isa = PBXGroup;
-			children = (
-				646865430AE8AE807FBA4EB5248C4A29 /* Supporting Files */,
-				6B030521447A7477E6E8D1B32600353C /* TaiwanRadioTests.m */,
-			);
-			path = TaiwanRadioTests;
-			sourceTree = "<group>";
-		};
 		1F99DE88639F919E1BCAC61461BF253B /* TaiwanRadio */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,15 +93,6 @@
 			path = TaiwanRadio;
 			sourceTree = "<group>";
 		};
-		2F41482ED21AE8982D68932D45B7EF60 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AEC581DDE82418DB7AE1E78A4373322E /* Pods.debug.xcconfig */,
-				B19CF90DCDA8C147149241E08A59661D /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		4ADD0EC0C1E028294CCEB734C411E06E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,19 +105,20 @@
 			path = TaiwanRadio;
 			sourceTree = "<group>";
 		};
-		646865430AE8AE807FBA4EB5248C4A29 /* Supporting Files */ = {
+		8D877C83E820DB2F10C7C0D1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				979B248DB3B739776AEF98BEF5B2B7AA /* Info.plist */,
+				BA45B1F9D5344561376AB54E /* Pods.debug.xcconfig */,
+				81E2C0E9D8CC6CA66FB9ECBA /* Pods.release.xcconfig */,
 			);
-			name = "Supporting Files";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		905B024F828C779814CA085108201AB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				2F8431EE90FB933B7FCC6779F974E448 /* iAd.framework */,
-				7BBE80F336E370D5FD6CA0A15D81E9EC /* libPods.a */,
+				E290CBF68A63B5F364F12F55 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				C1C15F17D322C6E7AF91ED8482D3BB7B /* TaiwanRadio.app */,
-				1E040CC23B8D7D091BA1265938F878FB /* TaiwanRadioTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,45 +135,26 @@
 			isa = PBXGroup;
 			children = (
 				905B024F828C779814CA085108201AB6 /* Frameworks */,
-				2F41482ED21AE8982D68932D45B7EF60 /* Pods */,
 				A8FE5061BDCFE06DEF03DCEB3772E099 /* Products */,
 				4ADD0EC0C1E028294CCEB734C411E06E /* Supporting Files */,
 				1F99DE88639F919E1BCAC61461BF253B /* TaiwanRadio */,
-				1657DBFAC6FD4E3C89E41F486EACD74C /* TaiwanRadioTests */,
 				5CCA15E73FE1FC035F17D9C7F1A346B8 /* Images.xcassets */,
+				8D877C83E820DB2F10C7C0D1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2365A42A6D73DF73C2059C6539A1FE8D /* TaiwanRadioTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5932DE2994EAE3A9409C8E9E4F13041A /* Build configuration list for PBXNativeTarget "TaiwanRadioTests" */;
-			buildPhases = (
-				E6B7246F9C91D23F01CD5CE337407F96 /* Sources */,
-				3DBB26BE6FE6BA4452E0DB43C6A8578D /* Frameworks */,
-				4AE8B1B08592D392BB32D1E2BCAD912F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				869404E3DD8944B5BD61FEFC7621BD19 /* PBXTargetDependency */,
-			);
-			name = TaiwanRadioTests;
-			productName = TaiwanRadioTests;
-			productReference = 1E040CC23B8D7D091BA1265938F878FB /* TaiwanRadioTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		55876EEADAA8D3FC3DD632DE4782088B /* TaiwanRadio */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 174C7FD4CBBE8644251CD6222E493F7D /* Build configuration list for PBXNativeTarget "TaiwanRadio" */;
 			buildPhases = (
-				40745516009BB139BEDBBC7479BBE96C /* Check Pods Manifest.lock */,
+				7B3F721449307790CBFFDC46 /* Check Pods Manifest.lock */,
 				98A0215CA33B4C6E1958792B610D2AD7 /* Sources */,
 				D772BE621318D64CB9F50A3AF80DDE36 /* Frameworks */,
 				393ABDAD654A2D7B55758314F9F8675B /* Resources */,
-				999CBEE9A007FFF530C849B94D46D6EC /* Copy Pods Resources */,
+				9B9ECF46FE79A108C8641B3F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,16 +171,11 @@
 		A05B1179D8930AFC644106BBE58BA582 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Shinren Pan";
 				TargetAttributes = {
-					2365A42A6D73DF73C2059C6539A1FE8D = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = 55876EEADAA8D3FC3DD632DE4782088B;
-					};
 					55876EEADAA8D3FC3DD632DE4782088B = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 695JWAHYWN;
 					};
 				};
 			};
@@ -258,7 +195,6 @@
 			projectRoot = "";
 			targets = (
 				55876EEADAA8D3FC3DD632DE4782088B /* TaiwanRadio */,
-				2365A42A6D73DF73C2059C6539A1FE8D /* TaiwanRadioTests */,
 			);
 		};
 /* End PBXProject section */
@@ -276,17 +212,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AE8B1B08592D392BB32D1E2BCAD912F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		40745516009BB139BEDBBC7479BBE96C /* Check Pods Manifest.lock */ = {
+		7B3F721449307790CBFFDC46 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -301,7 +230,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		999CBEE9A007FFF530C849B94D46D6EC /* Copy Pods Resources */ = {
+		9B9ECF46FE79A108C8641B3F /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -333,23 +262,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6B7246F9C91D23F01CD5CE337407F96 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				70D5131C89C3B9DC6A69EA30795AA58F /* TaiwanRadioTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		869404E3DD8944B5BD61FEFC7621BD19 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 55876EEADAA8D3FC3DD632DE4782088B /* TaiwanRadio */;
-			targetProxy = B4949F26C23C6DA7B6BF4BE712910DAC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0CDF6B4120E8EFBB2B0B677F2A991CEF /* Main.storyboard */ = {
@@ -425,35 +338,18 @@
 			};
 			name = Release;
 		};
-		3B54C664EC7223E03ECDEA59412B2CE8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TaiwanRadioTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaiwanRadio.app/TaiwanRadio";
-			};
-			name = Debug;
-		};
 		40428B3EEF999D5EDCE7386A44B12472 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEC581DDE82418DB7AE1E78A4373322E /* Pods.debug.xcconfig */;
+			baseConfigurationReference = BA45B1F9D5344561376AB54E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TaiwanRadio/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shinrenpan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -480,6 +376,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -502,31 +399,18 @@
 			};
 			name = Debug;
 		};
-		B051E513387807BAED70C7614BA1F4E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TaiwanRadioTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaiwanRadio.app/TaiwanRadio";
-			};
-			name = Release;
-		};
 		B304C22224B29CFF364556C1F1F9FC2B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B19CF90DCDA8C147149241E08A59661D /* Pods.release.xcconfig */;
+			baseConfigurationReference = 81E2C0E9D8CC6CA66FB9ECBA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TaiwanRadio/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shinrenpan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -549,15 +433,6 @@
 			buildConfigurations = (
 				720D5AE11E560004DB60CE45D93C8886 /* Debug */,
 				12385641060E9156FEE94FFB38E9D1D7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5932DE2994EAE3A9409C8E9E4F13041A /* Build configuration list for PBXNativeTarget "TaiwanRadioTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3B54C664EC7223E03ECDEA59412B2CE8 /* Debug */,
-				B051E513387807BAED70C7614BA1F4E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
