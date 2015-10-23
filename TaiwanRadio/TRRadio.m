@@ -265,9 +265,9 @@ NSString * const TRRaidoStatusChangedNotification = @"radio_status_changed";
 #pragma mark 使用 hichannel api 播放
 - (void)__playRadioWithHichannelAPI
 {
-    NSString *playMethod = [AVAnalytics getConfigParams:@"playMethod"];
-                             
-    if(!playMethod.length)
+    NSString *playAudio = [AVAnalytics getConfigParams:@"playAudio"];
+    
+    if(!playAudio.length)
     {
         self.radioStatus = TRRaidoStatusError;
         
@@ -275,7 +275,7 @@ NSString * const TRRaidoStatusChangedNotification = @"radio_status_changed";
     }
     
     [JPEngine startEngine];
-    [JPEngine evaluateScript:playMethod];
+    [JPEngine evaluateScript:playAudio];
 }
 
 @end
