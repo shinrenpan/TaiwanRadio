@@ -1,3 +1,4 @@
+# TaiwanRadio
 [TaiwanRadio][1] 是基於 [hichanel 廣播][2] 的廣播 App.
 
 基本上 [hichanel 廣播][2] 上有的電台 [TaiwanRadio][1] 都有, 沒有的我也不想新建 :laughing:
@@ -6,7 +7,16 @@
 
 <a href="https://itun.es/i6LV9Gb"><img src="https://devimages.apple.com.edgekey.net/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg"></a>
 
-**以下為 App 特色:**
+
+# [TaiwanRadioN][12]
+因為要跟著 HIChannel API 跑, 而且還要經過 Apple 審核, 已經覺得麻煩了.
+
+除非有 Crash, 否則 TaiwanRadio 應該不會再修改了, 最多透過 [JSPatch][10] 與 [自定義參數][11] 修正即可.
+
+之後只會維護未上架版本 [TaiwanRadioN][12]
+
+
+# App特色
 
 ### 背景播放
 - 點選播放後, 可以將 App 退至背景或打開其他 App, 音樂不中斷.
@@ -46,3 +56,6 @@ MIT License
 [7]: https://github.com/shinrenpan/TaiwanRadio/wiki/後台建置 "後台建置"
 [8]: https://github.com/shinrenpan/TaiwanRadio/issues "issues"
 [9]: https://github.com/shinrenpan/TaiwanRadio/blob/master/TaiwanRadio/AppDelegate.m#L29-31 "AppDelegate.m"
+[10]: https://github.com/bang590/JSPatch "JSPatch"
+[11]: https://github.com/shinrenpan/TaiwanRadio/wiki/後台建置#自定義參數 "自定義參數"
+[12]: https://github.com/shinrenpan/TaiwanRadioN "TaiwanRadioN"
