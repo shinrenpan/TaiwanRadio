@@ -1,11 +1,14 @@
+[![LICENSE](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
+[![Donate](https://img.shields.io/badge/PayPal-Donate-yellow.svg?style=flat-square)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LC58N7VZUST5N)
+[![AppStore](https://img.shields.io/badge/Download-App%20Store-origin.svg?style=flat-square)](https://itun.es/i6LV9Gb)
+
+
 # TaiwanRadio
 [TaiwanRadio][1] 是基於 [hichanel 廣播][2] 的廣播 App.
 
 基本上 [hichanel 廣播][2] 上有的電台 [TaiwanRadio][1] 都有, 沒有的我也不想新建 :laughing:
 
 當 [hichanel 廣播][2] 壞了 [TaiwanRadio][1] 也會跟著壞了, 我無法修復 :grimacing:
-
-<a href="https://itun.es/i6LV9Gb"><img src="https://devimages.apple.com.edgekey.net/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg"></a>
 
 
 # [TaiwanRadioN][12]
@@ -42,9 +45,6 @@
 本 Project 使用 [LeanCloud][6] 當作後台,  
 後台建置可以到 [wiki][7] 觀看教學.
 
-
-# License
-MIT License
 
 
 [1]: https://itun.es/i6LV9Gb "TaiwanRadio"
