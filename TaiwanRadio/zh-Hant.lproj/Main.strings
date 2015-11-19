@@ -1,3 +1,4 @@
+
 /* Class = "UINavigationItem"; title = "Radios"; ObjectID = "CUg-qI-ibA"; */
 "CUg-qI-ibA.title" = "電台列表";
 
@@ -7,14 +8,11 @@
 /* Class = "UILabel"; text = "No radio selected"; ObjectID = "J9b-8T-jcg"; */
 "J9b-8T-jcg.text" = "未選擇電台";
 
-/* Class = "UILabel"; text = "Title"; ObjectID = "T4w-dP-SJ3"; */
-"T4w-dP-SJ3.text" = "Title";
+/* Class = "UITableViewSection"; footerTitle = "This App is free. The Advertising will present once, however you could disable it."; ObjectID = "Tx2-cW-zJe"; */
+"Tx2-cW-zJe.footerTitle" = "此 App 為免費軟體. 將會自動展示廣告一次, 但是你可以手動禁止它.";
 
-/* Class = "UITableViewSection"; footerTitle = "This App is free. You can click the advertisement for supporting me further."; ObjectID = "Tx2-cW-zJe"; */
-"Tx2-cW-zJe.footerTitle" = "此 App 為免費軟體. 你可以點擊廣告贊助我.";
-
-/* Class = "UITableViewSection"; headerTitle = "Donate"; ObjectID = "Tx2-cW-zJe"; */
-"Tx2-cW-zJe.headerTitle" = "贊助";
+/* Class = "UITableViewSection"; headerTitle = "Advertising"; ObjectID = "Tx2-cW-zJe"; */
+"Tx2-cW-zJe.headerTitle" = "廣告";
 
 /* Class = "UITabBarItem"; title = "Favorites"; ObjectID = "WQD-op-zf1"; */
 "WQD-op-zf1.title" = "收藏";
@@ -22,21 +20,14 @@
 /* Class = "UITableViewSection"; headerTitle = "Play / Pause"; ObjectID = "eBO-JI-4Qo"; */
 "eBO-JI-4Qo.headerTitle" = "播放 / 暫停";
 
-/* Class = "UILabel"; text = "Title"; ObjectID = "fXD-Zf-Efp"; */
-"fXD-Zf-Efp.text" = "Title";
-
-/* Class = "UILabel"; text = "Advertisement"; ObjectID = "lcf-Wh-lEb"; */
-"lcf-Wh-lEb.text" = "廣告";
+/* Class = "UILabel"; text = "Enable to present advertising once"; ObjectID = "lcf-Wh-lEb"; */
+"lcf-Wh-lEb.text" = "自動展示廣告一次";
 
 /* Class = "UINavigationItem"; title = "Settings"; ObjectID = "nIB-cB-36D"; */
 "nIB-cB-36D.title" = "設定";
-
-/* Class = "UILabel"; text = "subTitle"; ObjectID = "nZh-dU-Jza"; */
-"nZh-dU-Jza.text" = "subTitle";
 
 /* Class = "UITabBarItem"; title = "Settings"; ObjectID = "ojA-8g-jO8"; */
 "ojA-8g-jO8.title" = "設定";
 
 /* Class = "UINavigationItem"; title = "Favorites"; ObjectID = "yPA-1S-a2A"; */
 "yPA-1S-a2A.title" = "收藏";
-
