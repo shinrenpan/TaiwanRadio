@@ -23,22 +23,11 @@
 #import "TRRadio.h"
 #import "TRSettingController.h"
 
-#import <iAd/iAd.h>
-#import <GoogleMobileAds/GoogleMobileAds.h>
-
 // TableView Section 類型
 typedef NS_ENUM(NSUInteger, TableSectionType) {
     TableSectionTypePlayer = 0,     // 播放 / 暫停的 section
     TableSectionTypeAdvertising = 1 // 廣告 section
 };
-
-
-@interface TRSettingController ()<GADInterstitialDelegate>
-
-// admob 插頁式廣告
-@property (nonatomic, strong) GADInterstitial *admob;
-
-@end
 
 
 @implementation TRSettingController
@@ -55,13 +44,7 @@ typedef NS_ENUM(NSUInteger, TableSectionType) {
     
     if([self isViewLoaded] && self.view.window == nil)
     {
-        // maybe 正在看廣告
-        [self dismissViewControllerAnimated:NO completion:nil];
         [[NSNotificationCenter defaultCenter]removeObserver:self];
-        
-        _admob.delegate = nil;
-        _admob          = nil;
-        self.view       = nil;
     }
 }
 
@@ -116,6 +99,11 @@ typedef NS_ENUM(NSUInteger, TableSectionType) {
         cell.detailTextLabel.text = sub;
     }
     
+    else if(indexPath.section == TableSectionTypeAdvertising)
+    {
+        cell.accessoryView = [self __switchForAdvertisingDisable];
+    }
+    
     return cell;
 }
 
@@ -151,42 +139,6 @@ typedef NS_ENUM(NSUInteger, TableSectionType) {
             [[TRRadio singleton]resume];
         }
     }
-    else if(indexPath.section == TableSectionTypeAdvertising)
-    {
-        [tableView deselectRowAtIndexPath:indexPath animated:YES];
-        [self __presentAdvertising];
-    }
-}
-
-#pragma mark - GADInterstitialDelegate
-- (void)interstitialDidReceiveAd:(GADInterstitial *)ad
-{
-    [[UIApplication sharedApplication]setStatusBarHidden:YES];
-    [ad presentFromRootViewController:self];
-}
-
-- (void)interstitial:(GADInterstitial *)ad didFailToReceiveAdWithError:(GADRequestError *)error
-{
-    [[UIApplication sharedApplication]setStatusBarHidden:NO];
-    
-    _admob.delegate = nil;
-    _admob          = nil;
-}
-
-- (void)interstitialDidDismissScreen:(GADInterstitial *)ad
-{
-    [[UIApplication sharedApplication]setStatusBarHidden:NO];
-    
-    _admob.delegate = nil;
-    _admob          = nil;
-}
-
-- (void)interstitialWillLeaveApplication:(GADInterstitial *)ad
-{
-    [[UIApplication sharedApplication]setStatusBarHidden:NO];
-    
-    _admob.delegate = nil;
-    _admob          = nil;
 }
 
 #pragma mark - Private
@@ -215,17 +167,29 @@ typedef NS_ENUM(NSUInteger, TableSectionType) {
                   withRowAnimation:UITableViewRowAnimationNone];
 }
 
-#pragma mark 開啟插頁式廣告
-- (void)__presentAdvertising
+#pragma mark 返回展示廣告的 UISwitch
+- (UISwitch *)__switchForAdvertisingDisable
 {
-    if(![self requestInterstitialAdPresentation])
-    {
-        NSString *admobId = @"ca-app-pub-9003896396180654/4023970191";
-        _admob            = [[GADInterstitial alloc]initWithAdUnitID:admobId];
-        _admob.delegate   = self;
-        
-        [_admob loadRequest:[GADRequest request]];
-    }
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    BOOL advertisingDisable     = [userDefault boolForKey:@"advertisingDisable"];
+    
+    UISwitch *result = [[UISwitch alloc]init];
+    result.on = !advertisingDisable;
+    
+    [result addTarget:self action:@selector(__switchValueChanged:) forControlEvents:UIControlEventValueChanged];
+    
+    return result;
+}
+
+#pragma mark UISwitch on / off handle
+- (void)__switchValueChanged:(UISwitch *)sender
+{
+    BOOL advertisingDisable = !sender.on;
+    
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    
+    [userDefault setBool:advertisingDisable forKey:@"advertisingDisable"];
+    [userDefault synchronize];
 }
 
 @end
