@@ -19,6 +19,7 @@
 		82F4D9E7C312693930C34B18BA3FE9AB /* TRListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5C6BB360A0848A8DEF16EB988F240D /* TRListViewController.m */; };
 		841C415F6224CE840D3DDA16800D8895 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7B29108F69585D3F2B459972C963B8 /* AppDelegate.m */; };
 		886CB86770533B15ABEE2BBBD5637503 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BBE80F336E370D5FD6CA0A15D81E9EC /* libPods.a */; };
+		CA2885363329E6EF9D07D7FB9366D5BD /* TRRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF44DED53A969859B39E5BFFAF661D1 /* TRRootTabBarController.m */; };
 		F04209FEE075051CA359002708993284 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DF1D35A04440EF667B5DDF5B76BB5C /* main.m */; };
 		FDB8779E4AEF746CD51166FB0FD0F6A7 /* TRUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F694A96AE63AD3F8831DE338D4546F /* TRUtility.m */; };
 /* End PBXBuildFile section */
@@ -33,8 +34,10 @@
 		3E9EF072B62AA7A48D4F195C6754C5AF /* TRListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRListViewController.h; sourceTree = "<group>"; };
 		406432DB76B55D11257EBAA7C53A7138 /* TRSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSettingController.h; sourceTree = "<group>"; };
 		49863F9E79351BECAA010476D7B244DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4D1877950ECE771C694634CE65B3D355 /* TRRootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRootTabBarController.h; sourceTree = "<group>"; };
 		4DCE086F1ABDBE0976EF2F41F4F788E7 /* TRFavoriteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRFavoriteController.m; sourceTree = "<group>"; };
 		5CCA15E73FE1FC035F17D9C7F1A346B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TaiwanRadio/Images.xcassets; sourceTree = "<group>"; };
+		5CF44DED53A969859B39E5BFFAF661D1 /* TRRootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRootTabBarController.m; sourceTree = "<group>"; };
 		679FEBD608CD0C7018D0DC24CAA5FBE1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		67E82818EEB0DC734A3EA69CA4777A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		685AB9B80EFD02F3434A7F835232DEA3 /* Launch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Launch.xib; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				AF5C6BB360A0848A8DEF16EB988F240D /* TRListViewController.m */,
 				83ECFCCA06C2A758F4722D4E839D10D6 /* TRRadio.h */,
 				DAD62E6316B6E433DABB4E9F7E5F8713 /* TRRadio.m */,
+				4D1877950ECE771C694634CE65B3D355 /* TRRootTabBarController.h */,
+				5CF44DED53A969859B39E5BFFAF661D1 /* TRRootTabBarController.m */,
 				406432DB76B55D11257EBAA7C53A7138 /* TRSettingController.h */,
 				FDA6C43835F7F3BCCAEB2FF8419B95DF /* TRSettingController.m */,
 				1E9903E36CC4E7C68B3B270F31E384F3 /* TRUtility.h */,
@@ -171,6 +176,7 @@
 		A05B1179D8930AFC644106BBE58BA582 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Shinren Pan";
 				TargetAttributes = {
@@ -256,6 +262,7 @@
 				68EEAD9F521F9E7E13D000277E00C6EC /* TRFavoriteController.m in Sources */,
 				82F4D9E7C312693930C34B18BA3FE9AB /* TRListViewController.m in Sources */,
 				73708F439CAF6AB71B367051C13EB043 /* TRRadio.m in Sources */,
+				CA2885363329E6EF9D07D7FB9366D5BD /* TRRootTabBarController.m in Sources */,
 				76DD837B3ED13ECD7D49B0F0AC16B3E8 /* TRSettingController.m in Sources */,
 				FDB8779E4AEF746CD51166FB0FD0F6A7 /* TRUtility.m in Sources */,
 				F04209FEE075051CA359002708993284 /* main.m in Sources */,
