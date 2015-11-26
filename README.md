@@ -1,61 +1,32 @@
-[![LICENSE](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
-[![Donate](https://img.shields.io/badge/PayPal-Donate-yellow.svg?style=flat-square)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LC58N7VZUST5N)
-[![AppStore](https://img.shields.io/badge/Download-App%20Store-origin.svg?style=flat-square)](https://itun.es/i6LV9Gb)
-
-
 # TaiwanRadio
-[TaiwanRadio][1] 是基於 [hichanel 廣播][2] 的廣播 App.
+HIChannel 已經加密, 暫不更新這個 Project 了, 請多支持官方 [App][1].
 
-基本上 [hichanel 廣播][2] 上有的電台 [TaiwanRadio][1] 都有, 沒有的我也不想新建 :laughing:
+## 加密
+以 ICRT 為例子, 查詢播放 URL 的 API 為:
 
-當 [hichanel 廣播][2] 壞了 [TaiwanRadio][1] 也會跟著壞了, 我無法修復 :grimacing:
+https://hichannel.hinet.net/radio/iplay.do?id=177
 
+* 重要的 Request Header 如下:
 
-# [TaiwanRadioN][12]
-因為要跟著 HIChannel API 跑, 而且還要經過 Apple 審核, 已經覺得麻煩了.
+```json
+{
+	"XuiteAuth": "GXUGWk7r+dY87o+LmLLvrsDvYTMX41QgoySVLobImms=",
+	"User-Agent": "XuiteMusic/1.0.5 (iPhone; iOS 9.1; Scale/2.00)",
+	"Referer": "https://hichannel.hinet.net/radio/index.do"
+```
 
-除非有 Crash, 否則 TaiwanRadio 應該不會再修改了, 最多透過 [JSPatch][10] 與 [自定義參數][11] 修正即可.
+* Response 為加密過後的 JSON
 
-之後只會維護未上架版本 [TaiwanRadioN][12]
+```json
+{
+	"_c3": "8y3J5benIZ7GNDxAWZvn9qHh+478rZQBZX+ghalIzMhajpLStPmF4ZGu/lXO/2Q0MAfUQBkDMe8wWjIYl6vCtETlIlf73wYYBo7DRshBUsAS11Q8EVCf113ce+mShB4GHuhekMr17KLoRdUSDa21GxLV71HPf1+doJgzCTyAF1DB/6wr5A/Z337VOXOvvt8rpXdItpdC/j3dPu8rCAIqqNrNavPbdzUhNpxqPhKYFRxk1lmWETnn/l/MH+9b6Mcm",
+	"_c2": "5u9EXiwW4p04YOv1ATISeDBIv4T2suNaqwDv/7sLOJQ=",
+	"_c1": "vu5znlW9cUy7T3loPyH+rg=="
+}
+```
 
-
-# App特色
-
-### 背景播放
-- 點選播放後, 可以將 App 退至背景或打開其他 App, 音樂不中斷.
-
-### 自動停止
-- 設定倒數後音樂自動停止, 不浪費電源.
-- 倒數設定請使用 iPhone 內建倒數 App. 打開時鐘 -> 計時器 -> 設定倒數 -> 當計時結束選擇停止播放.
-
-### 控制中心
-- 支援內建控制中心及耳機線控停止或播放音樂.
-
-
-# 注意事項
-- 本 Project 使用 [xUnique][4] 管理 Xcode project file.
-- 本 Project 使用 [CocoaPods][5] 管理第三方 Library.
-- 本 Project 使用 [LeanClode][6] 當做後台.
-- 請在 [AppDelegate.m][9] 設置自己的 Key 跟 Id, 並移除 Error.
-
-使用前請先閱讀上方工具教學.  
-
-
-# 後台建置
-本 Project 使用 [LeanCloud][6] 當作後台,  
-後台建置可以到 [wiki][7] 觀看教學.
+有空再研究了. :smile:
 
 
 
-[1]: https://itun.es/i6LV9Gb "TaiwanRadio"
-[2]: http://hichannel.hinet.net/radio/index.do "hichannel 廣播"
-[3]: https://github.com/shinrenpan/TaiwanRadio/wiki/成效報表 "報表"
-[4]: https://github.com/truebit/xUnique "xUnique"
-[5]: https://cocoapods.org "CocoaPods"
-[6]: https://leancloud.cn "LeanClode"
-[7]: https://github.com/shinrenpan/TaiwanRadio/wiki/後台建置 "後台建置"
-[8]: https://github.com/shinrenpan/TaiwanRadio/issues "issues"
-[9]: https://github.com/shinrenpan/TaiwanRadio/blob/master/TaiwanRadio/AppDelegate.m#L29-31 "AppDelegate.m"
-[10]: https://github.com/bang590/JSPatch "JSPatch"
-[11]: https://github.com/shinrenpan/TaiwanRadio/wiki/後台建置#自定義參數 "自定義參數"
-[12]: https://github.com/shinrenpan/TaiwanRadioN "TaiwanRadioN"
+[1]: https://itunes.apple.com/us/app/xuite-sui-yi-ting/id942390303?mt=8
