@@ -29,4 +29,4 @@ https://hichannel.hinet.net/radio/iplay.do?id=177
 
 
 
-[1]: https://itunes.apple.com/us/app/xuite-sui-yi-ting/id942390303?mt=8
+[1]: https://itunes.apple.com/tw/app/hinet-guang-bo/id1188562934?l=zh&mt=8
